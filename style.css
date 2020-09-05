@@ -115,7 +115,7 @@ body{
 
 .card .contentBox h2{
     position: relative;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 1.5px;
     color: #fff;
     margin-bottom: 8px;
@@ -147,6 +147,10 @@ body{
 
 .card:nth-child(3) .contentBox .price{
     background: #8e44ad;
+}
+
+.card .contentBox .price h5 strike{
+    color: #232323;
 }
 
 /* Color */
