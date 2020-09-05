@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
 
 /* Reset */
 *{
@@ -74,7 +74,7 @@ body{
     font-size: 5rem;
     font-weight: 800;
     font-style: italic;
-    color: rgba(255, 255, 255, 0.04);
+    color: rgb(255,255,255,0.04);
 }
 
 /* Image */
@@ -91,7 +91,7 @@ body{
 }
 
 .card:hover .imBox{
-    top: 0%;
+    top: 0;
     transform: translateY(0%);
 }
 
@@ -101,15 +101,15 @@ body{
     transform: rotate(25deg);
 }
 
-/* Content Box */
+/* Whole Content Box */
 .card .contentBox{
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 100px;
     text-align: center;
-    transition: all 0.8s ease-in;
     z-index: 8;
+    transition: all 0.8s ease-in;
 }
 
 .card:hover .contentBox{
@@ -124,7 +124,7 @@ body{
     color: #fff;
 }
 
-/* All color and price */
+/* All Color and Price */
 .card .contentBox .pc{
     display: flex;
     align-items: center;
@@ -134,7 +134,7 @@ body{
 }
 
 /* Price */
-.card .contentBox .price{
+.card .contentBox .pc .price{
     width: 50%;
     height: 100%;
     padding: 6px 0;
@@ -142,29 +142,29 @@ body{
     transition: all 0.6s ease-in;
 }
 
-.card:nth-child(1) .contentBox .price{
+.card:nth-child(1) .contentBox .pc .price{
     background: #ac5712;
 }
 
-.card:nth-child(2) .contentBox .price{
+.card:nth-child(2) .contentBox .pc .price{
     background: #2980b9;
 }
 
-.card:nth-child(3) .contentBox .price{
+.card:nth-child(3) .contentBox .pc .price{
     background: #8e44ad;
 }
 
-.card .contentBox .price h5 strike{
+.card .contentBox .pc .price h5 strike{
     color: #232323;
 }
 
 /* Color */
-.card .contentBox .color{
+.card .contentBox .pc .color{
     display: flex;
     width: 50%;
     height: 100%;
     padding: 5px 0;
-    background-color: #232323;
+    background: #232323;
     justify-content: center;
     align-items: center;
     transition: all 0.6s ease-in;
@@ -176,21 +176,21 @@ body{
     border: none;
     border-radius: 50%;
     margin-left: 5px;
-    background-color: #9bdc28;
+    background: #9bdc28;
     cursor: pointer;
     transition: all 0.3s ease-in;
 }
 
-.card .contentBox .color span:nth-child(1){
-    background-color: #ac5712;
+.card .contentBox .pc .color span:nth-child(2){
+    background: #ac5712;
 }
 
-.card .contentBox .color span:nth-child(2){
-    background-color: #2e12ac;
+.card .contentBox .pc .color span:nth-child(3){
+    background: #2e12ac;
 }
 
-.card .contentBox .color span:nth-child(3){
-    background-color: #ac1286;
+.card .contentBox .pc .color span:nth-child(4){
+    background: #ac1286;
 }
 
 .card .contentBox .color span:hover{
@@ -219,9 +219,8 @@ body{
     padding: 10px 0;
     font-size: 0.9rem;
     text-decoration: none;
-    color: #131313;
-    font-weight: 500;
     color: #fff;
+    font-weight: 500;
     outline: none;
     transition: all 0.5s ease-in;
 }
@@ -248,4 +247,3 @@ body{
     background: #fff;
     color: #131313;
 }
-
